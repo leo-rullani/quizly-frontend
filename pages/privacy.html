@@ -18,7 +18,12 @@
     <script src="../shared/js/template.js"></script>
     <script src="../shared/js/helper.js"></script>
   </head>
-  <body onload="initHeader()" class="pos_rel">
+  <body
+    onload="initHeader()"
+    class="pos_rel"
+    style="min-height: 100vh; display: flex; flex-direction: column; margin: 0; color: #ffffff;"
+  >
+    <!-- Hintergrund wieder aktiv -->
     <section>
       <div class="background-wave">
         <img src="/assets/icons/wave.png" alt="a background wave image" />
@@ -29,26 +34,26 @@
       <div id="header" class="z_5"></div>
     </header>
 
-    <main class="main-privacy">
+    <main class="main-privacy" style="flex: 1 0 auto;">
       <div class="p48">
         <h1>Privacy Policy – Quizly</h1>
-        <p><strong>Last updated:</strong> <!-- TODO: Update date --> 04 December 2025</p>
+        <p>
+          <strong>Last updated:</strong>
+          04 December 2025
+        </p>
 
         <h2>1. Introduction</h2>
         <p>
-          Welcome to <strong>Quizly</strong>. On this page we inform you about how we
-          process personal data when you use our platform. This includes our
+          Welcome to <strong>Quizly</strong>. On this page we inform you about how
+          we process personal data when you use our platform. This includes our
           website, the quiz application and all related services.
         </p>
 
         <h2>2. Controller</h2>
-        <p>
-          The controller responsible for data processing on this website is:
-        </p>
-        <!-- TODO: Replace with your real contact details -->
+        <p>The controller responsible for data processing on this website is:</p>
         <p>
           <strong>Website Operator</strong><br />
-          Leo Rullani <br />
+          Leo Rullani<br />
           Untere Farnbühlstrasse 3<br />
           5610 Wohlen – Switzerland<br />
           E-mail: your.email@example.com
@@ -100,6 +105,7 @@
         </p>
 
         <h2>5. YouTube and external services</h2>
+
         <h3>5.1 YouTube</h3>
         <p>
           Quizly allows you to create quizzes based on YouTube videos by
@@ -215,7 +221,7 @@
       </div>
     </main>
 
-    <footer class="footer z-6 pos_abs">
+    <footer class="footer z-6" style="flex-shrink: 0;">
       <a href="./legalnotice.html" class="cu_po">Legal notice</a>
       <a href="./privacy.html" class="cu_po">Privacy policy</a>
     </footer>

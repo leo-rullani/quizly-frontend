@@ -18,7 +18,12 @@
     <script src="../shared/js/template.js"></script>
     <script src="../shared/js/helper.js"></script>
   </head>
-  <body onload="initHeader()" class="pos_rel">
+  <body
+    onload="initHeader()"
+    class="pos_rel"
+    style="min-height: 100vh; display: flex; flex-direction: column; margin: 0; color: #ffffff;"
+  >
+    <!-- Hintergrund wieder aktiv -->
     <section>
       <div class="background-wave">
         <img src="/assets/icons/wave.png" alt="a background wave image" />
@@ -29,12 +34,11 @@
       <div id="header" class="z_5"></div>
     </header>
 
-    <main class="main-privacy">
+    <main class="main-privacy" style="flex: 1 0 auto;">
       <div class="p48">
         <h1>Legal Notice / Impressum</h1>
 
         <h2>1. Website Operator</h2>
-        <!-- TODO: Replace with your real operator data -->
         <p>
           <strong>Quizly – Learning Platform</strong><br />
           Leugzim Rullani<br />
@@ -139,7 +143,7 @@
       </div>
     </main>
 
-    <footer class="footer z-6 pos_abs">
+    <footer class="footer z-6" style="flex-shrink: 0;">
       <a href="./legalnotice.html" class="cu_po">Legal notice</a>
       <a href="./privacy.html" class="cu_po">Privacy policy</a>
     </footer>
